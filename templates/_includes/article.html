@@ -10,10 +10,14 @@
 </header>
 
 {% if index %}
+  {% if article.category == "tumblog" %}
+  <div class="entry-content">{{ article.content }}</div>
+  {% else %}
   <div class="entry-content">{{ article.summary }}</div>
   <footer>
     <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
   </footer>
+  {% endif %}  
 {% else %}
   <div class="entry-content">{{ article.content }}</div>
 {% endif %}
