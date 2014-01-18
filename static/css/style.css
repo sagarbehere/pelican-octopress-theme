@@ -46,7 +46,9 @@ body {
   margin: 0;
 }
 .animenu li:hover > a {
+/*
   color: white;
+*/
 }
 .animenu input[type=checkbox] {
   position: absolute;
@@ -59,9 +61,10 @@ body {
   user-select: none;
 }
 
+/*
 .animenu > ul {
   border: 1px solid #040404;
-  background-color: #111111;
+  background-color: none;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
@@ -71,6 +74,7 @@ body {
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
 }
+*/
 /*
 .animenu > ul > li {
   float: left;
@@ -85,10 +89,11 @@ body {
   padding: 0.5em 1em;
   text-transform: uppercase;
 }
+
 .animenu > ul a {
   color: #999999;
   text-decoration: none;
-  text-shadow: 0 1px 0 #111111;
+  text-shadow: 0 1px 0 none;
 }
 .animenu > ul ul {
   position: absolute;
@@ -98,7 +103,7 @@ body {
   opacity: 0;
   visibility: hidden;
   margin: 2em 0 0 0;
-  background-color: #373737;
+  background-color: #dbdbdb;
   background-image: none;
   -webkit-transition-property: margin, opacity;
   -moz-transition-property: margin, opacity;
@@ -117,7 +122,7 @@ body {
   display: block;
   -webkit-box-shadow: 0 1px 0 #1e1e1e, 0 2px 0 #515151;
   -moz-box-shadow: 0 1px 0 #1e1e1e, 0 2px 0 #515151;
-  box-shadow: 0 1px 0 #1e1e1e, 0 2px 0 #515151;
+  box-shadow: 0 1px 0 #1e1e1e, 0 0px 0 #515151;
   border: 0px;
   margin: 0px;
 }
@@ -152,10 +157,12 @@ body {
   padding: 1em;
   width: 175px;
   display: block;
-  border-color: #373737;
+  border-color: none;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 .animenu > ul ul a:hover {
-  background-color: #0186ba;
+  background-color: #ebebeb;
   border-color: #0186ba;
 }
 
@@ -172,7 +179,8 @@ body {
   }
   .animenu label {
     border: 1px solid #040404;
-    background-color: #111111;
+/*
+    background-color: none;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
     background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
@@ -182,7 +190,8 @@ body {
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
     color: #999999;
-    text-shadow: 0 1px 0 #111111;
+    text-shadow: 0 1px 0 none;
+*/
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -202,13 +211,13 @@ body {
   }
   .animenu > ul {
     position: relative;
-    border-color: #111111;
+    border-color: none;
     margin: 0.5em 0 !important;
     padding: 0.25em;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    background-color: #111111;
+    background-color: none;
     background-image: none;
   }
   .animenu > ul:after {
@@ -228,7 +237,7 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    background-color: #111111;
+    background-color: none;
     background-image: none;
   }
   .animenu > ul > li > a {
