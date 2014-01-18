@@ -33,6 +33,11 @@
   <script src="{{ SITEURL }}/theme/js/ender.js"></script>
   <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
   <script src="{{ SITEURL }}/theme/js/libs/jquery-2.0.3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	// Revert jQuery's '$' alias, to avoid clashes with ender.js. NOTE: Use
+	// jQuery(...), instead of $(...) from here on.
+	jQuery.noConflict();
+  </script>
   <script src="{{ SITEURL }}/theme/js/libs/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
   <script src="{{ SITEURL }}/theme/js/menu.js" type="text/javascript"></script>
 
