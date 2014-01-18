@@ -36,6 +36,7 @@ function addSidebarToggler() {
     });
   }
   if (sections.length >= 3){ $('aside.sidebar').addClass('thirds'); }
+  $('.toggle-sidebar').trigger('click');
 }
 
 function testFeatures() {
