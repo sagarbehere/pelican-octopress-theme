@@ -6,6 +6,7 @@
 	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
   </section>
   {% endif %}
+  {% if DISPLAY_RECENT_POSTS_ON_SIDEBAR %}
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
@@ -16,7 +17,8 @@
       {% endfor %}
     </ul>
   </section>
-  {% if categories %}
+  {% endif %}
+  {% if DISPLAY_CATEGORIES_ON_SIDEBAR %}
   <section>
       
     <h1>Categories</h1>
@@ -27,14 +29,14 @@
     </ul>
   </section>
   {% endif %} 
-
+  {% if DISPLAY_TAGS_ON_SIDEBAR %}
   <section>
   <h1>Tags</h1>
   {% for tag, article in tags %}
     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
   {% endfor %}
   </section>
-
+  {% endif %}
   {% include '_includes/github.html' %}
   {% include '_includes/social.html' %}
   {% include '_includes/links.html' %}
