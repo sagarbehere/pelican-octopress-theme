@@ -1,0 +1,27 @@
+/*
+.section {
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+*/
+
+.section h2 {
+  width: 160px;
+  padding-right: 30px;
+  float: left;
+  padding-top: 0;
+  line-height: 22px;
+}
+
+.section .item {
+  width: 710px;
+  padding-left: 50px;
+  float: right;
+  padding-top: 0;
+  margin-bottom: 9px;
+  position: relative;
+  padding-bottom: 5px;
+  background: url(../images/separator.png) no-repeat 0 bottom;
+}
